@@ -176,7 +176,7 @@ def main():
     print("using {} device.".format(device))
     epoch = 0
 
-    root_dir = "/root/MedMamba-main/MEDdata/brain"
+    root_dir = "/kaggle/input/alzheimersoriginaldataset/OriginalDataset"
     (train_dataset, val_dataset), data_info = get_dataset_and_info("brain","CutMix",True, root_dir)
     cutmix_train_dataset = CutMix(
         dataset=train_dataset,
